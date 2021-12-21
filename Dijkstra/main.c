@@ -55,7 +55,7 @@ void Dijkstra(int **graph, int n, int start)
             w = i;
             while(prev[w]!=-1)
             {
-                printf("%d ", prev[w]);
+                printf(" The path is %d", prev[w]);
                 w = prev[w];
             }
             printf("\n");
@@ -65,7 +65,7 @@ void Dijkstra(int **graph, int n, int start)
 // Main function to test the Dijkstra's algorithm
 int main()
 {
-    int n, i, j, start, **graph;
+    int n, i, j,start, **graph;
     // Enter the number of vertices
     printf("Enter the number of vertices: ");
     scanf("%d", &n);
